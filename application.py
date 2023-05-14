@@ -7,7 +7,7 @@ from lifetimes import GammaGammaFitter
 from flask import Flask, send_file
 import io
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 def RClass(x, p, d):
     if x <= d[p][0.25]:
