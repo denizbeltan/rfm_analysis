@@ -205,7 +205,7 @@ def RFM():
 with open("static/newplot.png", "rb") as f:
     image = f.read()
 
-@app.route('/')
+@application.route('/')
 def dash_show():
     RFM()
     return send_file(
@@ -215,5 +215,5 @@ def dash_show():
     )
 
 if __name__ == '__main__':
-    app.run()
+    application.run()
 
